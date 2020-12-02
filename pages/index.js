@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/Link'
-import Layout from '../components/Layout'
+import SplashScreen from '../components/splashscreen.js'
 
 export default function Home() {
   return (
-    <Layout>
+    <SplashScreen>
       <div className="container">
         <Head>
           <title>Create Next App</title>
@@ -28,13 +28,8 @@ export default function Home() {
             <Link href="authors"><a>Who are we?</a></Link>
           </p>
 
-          <img src="/img/twitter-pp.jpg" alt="Vercel Logo" className="logo" />
         </main>
-
-        <footer>
-          <p>Built by @vvveracruz</p>
-        </footer>
       </div>
-    </Layout>
+    </SplashScreen>
   )
 }

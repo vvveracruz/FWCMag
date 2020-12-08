@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  position: absolute;
+  bottom: 3%;
+}
+
+.linkBox{
+  display: inline-block;
+  margin: auto;
+  position: relative;
+  width: 30%;
+  text-align: center;
+}

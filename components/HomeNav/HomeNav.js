@@ -2,24 +2,26 @@ import React from 'react';
 import styles from './HomeNav.module.css';
 import Link from 'next/Link';
 import HomePage from '../HomePage/HomePage';
-import HomeContentLink from '../HomeContentLink/HomeContentLink';
+import NeonLink from '../NeonLink/NeonLink';
 import HomeGet from '../HomeGetLink/HomeGetLink';
 
 const HomeNav = ( props ) => {
   return (
     <div className = { styles.container }>
       <div className = { styles.linkBox }>
-        <HomeContentLink
+        <NeonLink
           link = "vibe"
           text = 'About'/>
       </div>
       <div className = { styles.linkBox }>
-        <HomeGet
+        <NeonLink
           link = "#"
-          text = "Get the current issue"/>
+          text = " "
+          // text = "Get the current issue"
+          />
       </div>
       <div className = { styles.linkBox }>
-        <HomeContentLink
+        <NeonLink
           link = "/authors"
           text = 'Contributors'/>
       </div>

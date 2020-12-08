@@ -1,0 +1,12 @@
+@import '../../public/theme.scss';
+
+.container {
+  background: linear-gradient(
+    25deg,
+    $color-dark-purple 10%,
+    $color-hot-pink 66%,
+    $color-pale-pink 100% );
+  position: absolute;
+  height: 100%;
+  width: 100%
+}

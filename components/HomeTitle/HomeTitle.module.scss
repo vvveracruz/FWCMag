@@ -1,0 +1,54 @@
+@import "../../public/theme.scss";
+
+/*  MODULE SPECIFIC VARS  */
+/*  Safe to edit
+*/
+$font-size-scaler:        500%;
+$letter-spacing:          .75rem;
+$font-family:             $font-FWC, serif;
+$text-color:              white;
+$animation-duration:      1s;
+$text-stroke:             1.25px $color-dark-purple;
+$text-shadow:             5px 5px 15px $color-dark-purple;
+$text-tilt-degrees:       -7deg;
+
+/*  DANGER ZONE           */
+/*  Only edit if you know what you're doing
+*/
+.container {
+  margin:                 0;
+  position:               absolute;
+  top:                    50%;
+  left:                   50%;
+  -ms-transform:          translate(-50%, -50%);
+  transform:              translate(-50%, -50%);
+  text-align:             center;
+}
+
+.title {
+  font-size:              $font-size-scaler;
+  letter-spacing:         $letter-spacing;
+  font-family:            $font-family;
+  color:                  $text-color;
+  animation-timing-function:          ease-in-out;
+  -webkit-animation-timing-function:  ease-in-out;
+  animation:              spaceIn $animation-duration linear;
+  -webkit-text-stroke:    $text-stroke;
+  text-shadow:            $text-shadow;
+}
+
+@keyframes spaceIn {
+  0% {
+    letter-spacing:       2*$letter-spacing;
+  }
+  70% {
+    letter-spacing:       0.75*$letter-spacing;
+  }
+  100% {
+    letter-spacing:       $letter-spacing;
+  }
+}
+
+.diagonalBox {
+  transform:              skewY( $text-tilt-degrees );
+}

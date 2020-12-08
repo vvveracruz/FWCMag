@@ -1,0 +1,62 @@
+@import "../../public/theme.scss";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/*  MODULE SPECIFIC VARS  */
+/*  Safe to edit
+*/
+$font-family:             'Pacifico', 'Leckerli One', cursive;
+$text-primary-color:       lighten( $color-dark-purple, 50% );
+$shadow-color:             $color-neon-blue;
+
+/*  DANGER ZONE           */
+/*  Only edit if you know what you're doing
+*/
+.neon {
+  font-family:            $font-family;
+  color:                  $text-primary-color;
+  text-shadow:
+    0 0 0 transparent,
+    0 0 10px $shadow-color,
+    0 0 20px rgba(38, 149, 255, 0.5),
+    0 0 40px $shadow-color,
+    0 0 100px $shadow-color,
+    0 0 200px $shadow-color,
+    0 0 300px $shadow-color,
+    0 0 500px $shadow-color;
+  animation: blink 0.01s infinite alternate;
+}
+
+a.neon:hover {
+  text-decoration: none;
+  color:    $text-primary-color;
+  text-shadow:
+    0 0 0 transparent,
+    0 0 10px $shadow-color,
+    0 0 20px $shadow-color,
+    0 0 40px $shadow-color,
+    0 0 100px $shadow-color,
+    0 0 200px $shadow-color,
+    0 0 300px $shadow-color,
+    0 0 500px $shadow-color;
+
+}
+
+
+
+@keyframes blink {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.85;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.65;
+  }
+  46% {
+    opacity: 1;
+  }
+}

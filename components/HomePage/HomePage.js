@@ -6,15 +6,13 @@ import HomeTitle from '../HomeTitle/HomeTitle';
 
 const HomePage = ( props ) => {
   return (
-    <div className = { styles.container } >
+    <div className = { styles.container }>
       <Head>
         <title>{ props.title }</title>
         <link rel="shortcut icon" type="image/jpg" href={ props.faviconFilepath } />
       </Head>
-      <main>
-        <HomeTitle title = { props.title } />
-        <HomeNav />
-      </main>
+      <HomeTitle title = { props.title } />
+      <HomeNav />
     </div>
   )
 };

@@ -3,7 +3,7 @@ import styles from './HomeNav.module.css';
 import Link from 'next/Link';
 import HomePage from '../HomePage/HomePage';
 import HomeContentLink from '../HomeContentLink/HomeContentLink';
-import HomeGet from '../HomeGet/HomeGet';
+import HomeGet from '../HomeGetLink/HomeGetLink';
 
 const HomeNav = ( props ) => {
   return (

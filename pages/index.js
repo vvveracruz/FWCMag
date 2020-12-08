@@ -6,7 +6,8 @@ class IndexPage extends Component {
     return (
       <HomePage
         title = "Filmmakers Without Cameras"
-        faviconFilepath = "../public/favicon.ico" />
+        faviconFilepath = "../public/favicon.ico"
+        />
     )
   }
 }

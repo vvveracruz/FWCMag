@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/Link';
-import styles from './HomeGet.module.css';
+import styles from './HomeGetLink.module.css';
 
 const HomeGet = ( props ) => {
   return (

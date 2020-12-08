@@ -5,4 +5,14 @@
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title {
+  font-size: 500%;
+  font-family: 'ITC Serif Gothic Heavy', serif;
+}
+
+.diagonalBox {
+  transform: skewY(-7deg);
 }

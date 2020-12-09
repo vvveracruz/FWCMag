@@ -10,6 +10,7 @@ $text-color:              white;
 $animation-duration:      1s;
 $text-stroke:             1.25px $color-dark-purple;
 $text-shadow:             5px 5px 15px $color-dark-purple;
+$text-popout-shadow:      30px 30px 15px $color-dark-purple;
 $text-tilt-degrees:       -7deg;
 
 /*  DANGER ZONE           */
@@ -30,11 +31,13 @@ $text-tilt-degrees:       -7deg;
   letter-spacing:         $letter-spacing;
   font-family:            $font-family;
   color:                  $text-color;
-  animation-timing-function:          ease-in-out;
-  -webkit-animation-timing-function:  ease-in-out;
-  animation:              spaceIn $animation-duration linear;
+  // animation:              popOut $animation-duration ease-in-out;
   -webkit-text-stroke:    $text-stroke;
   text-shadow:            $text-shadow;
+}
+
+h1.title:hover{
+  animation:              popOut $animation-duration ease-in-out;
 }
 
 @keyframes spaceIn {
@@ -46,6 +49,18 @@ $text-tilt-degrees:       -7deg;
   }
   100% {
     letter-spacing:       $letter-spacing;
+  }
+}
+
+@keyframes popOut {
+  0% {
+    text-shadow:            $text-shadow;
+  }
+  50% {
+    text-shadow:            $text-popout-shadow;
+  }
+  100% {
+    text-shadow:            $text-shadow;
   }
 }
 

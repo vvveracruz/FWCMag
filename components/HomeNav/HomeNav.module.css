@@ -1,11 +1,5 @@
-.container {
-  width: 100%;
-  position: absolute;
-  bottom: 3%;
-}
-
 .linkBox{
-  font-size: 200%;
+  font-size: 300%;
   display: inline-block;
   margin: auto;
   position: relative;

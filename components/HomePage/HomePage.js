@@ -12,8 +12,11 @@ const HomePage = ( props ) => {
         <link rel="shortcut icon" type="image/jpg" href={ props.faviconFilepath } />
       </Head>
       <div className = { styles.container }>
-        <HomeTitle title = { props.title } />
-        <HomeNav />
+        <div className = {styles.titleContainer }>
+          <HomeTitle title = { props.title } />
+        </div>
+        <div className = { styles.navContainer }>
+          <HomeNav /></div>
       </div>
     </>
   )

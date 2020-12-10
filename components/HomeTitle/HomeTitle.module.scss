@@ -3,7 +3,7 @@
 /*  MODULE SPECIFIC VARS  */
 /*  Safe to edit
 */
-$font-size-scaler:        500%;
+$font-size-scaler:        700%;
 $letter-spacing:          .75rem;
 $font-family:             $font-FWC, serif;
 $text-color:              white;
@@ -16,15 +16,6 @@ $text-tilt-degrees:       -7deg;
 /*  DANGER ZONE           */
 /*  Only edit if you know what you're doing
 */
-.container {
-  margin:                 0;
-  position:               absolute;
-  top:                    50%;
-  left:                   50%;
-  -ms-transform:          translate(-50%, -50%);
-  transform:              translate(-50%, -50%);
-  text-align:             center;
-}
 
 .title {
   font-size:              $font-size-scaler;

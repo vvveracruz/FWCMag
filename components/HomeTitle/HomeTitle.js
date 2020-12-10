@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './HomeTitle.module.scss';
+import NeonLink from '../NeonLink/NeonLink';
 
 const HomePage = ( props ) => {
   const upperTitle = props.title.toUpperCase();

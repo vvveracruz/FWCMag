@@ -36,3 +36,8 @@
   font-weight: normal;
   src: local('ITC Serif Gothic Extra Bold'), url('itc-serif-gothic-extra-bold-588cef7e1f5d9.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Old London';
+  src: url('old-london.ttf');
+}

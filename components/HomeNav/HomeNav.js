@@ -10,13 +10,13 @@ const HomeNav = ( props ) => {
     <div className = { styles.container }>
       <div className = { styles.linkBox }>
         <NeonLink
-          link = "vibe"
+          link = "/about"
           text = 'About'/>
       </div>
       <div className = { styles.linkBox }>
         <NeonLink
           link = "#"
-          text = " "
+          text = ""
           // text = "Get the current issue"
           />
       </div>

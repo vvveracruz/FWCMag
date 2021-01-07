@@ -1,0 +1,35 @@
+/*  VARIABLES
+    Define the theme
+    Mostly safe to edit
+*/
+
+@import "fonts/fonts.css";
+
+:root {
+  --font-family-main: sans-serif;
+  --font-family-code: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/*  DO NOT EDIT
+    past this point
+    unless you really know what you're doing
+*/
+
+body {
+  margin: 0;
+  font-family: var( --font-family-main );
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var( --color-main );
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+code {
+  font-family: var( --font-family-code );
+}

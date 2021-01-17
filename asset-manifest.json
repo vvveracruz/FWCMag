@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/FWCMag/static/css/main.eb97588e.chunk.css",
+    "main.js": "/FWCMag/static/js/main.687e0015.chunk.js",
+    "main.js.map": "/FWCMag/static/js/main.687e0015.chunk.js.map",
+    "runtime-main.js": "/FWCMag/static/js/runtime-main.d77760db.js",
+    "runtime-main.js.map": "/FWCMag/static/js/runtime-main.d77760db.js.map",
+    "static/js/2.0798524e.chunk.js": "/FWCMag/static/js/2.0798524e.chunk.js",
+    "static/js/2.0798524e.chunk.js.map": "/FWCMag/static/js/2.0798524e.chunk.js.map",
+    "index.html": "/FWCMag/index.html",
+    "static/css/main.eb97588e.chunk.css.map": "/FWCMag/static/css/main.eb97588e.chunk.css.map",
+    "static/js/2.0798524e.chunk.js.LICENSE.txt": "/FWCMag/static/js/2.0798524e.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/FWCMag/static/media/old-london.a67214b4.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d77760db.js",
+    "static/js/2.0798524e.chunk.js",
+    "static/css/main.eb97588e.chunk.css",
+    "static/js/main.687e0015.chunk.js"
+  ]
+}

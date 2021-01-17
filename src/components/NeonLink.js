@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const NeonLink = ( props ) => {
@@ -22,13 +23,9 @@ const NeonLink = ( props ) => {
   return (
     <>
       <NeonLink
-        whileHover = {{
-          opacity: [1, 0.1, 1, 1,  0.5, 1]
-        }}
-        transition = {{ duration: 0.1 }}
-      ><motion.a
-        href = { props.href }
-      >{ props.text }</motion.a>
+        whileHover = {{ opacity: [1, 0.1, 1, 1,  0.5, 1]}}
+        transition = {{ duration: 0.1 }} >
+        <Link to = { props.to }>{ props.text }</Link>
       </NeonLink>
     </>
   )

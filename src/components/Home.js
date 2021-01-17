@@ -1,16 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 import NeonLink from './NeonLink';
 import StyledTitle from './StyledTitle';
 
 const Home = ( props ) => {
-  const TitleBox = styled.div`
-    font-size: 300%;
+  const TitleBox = styled(motion.div)`
+    font-size: 400%;
     margin: auto;
-    margin-top: 15%;
-    width: 70%;
+    margin-top: 10%;
+    width: 50%;
   `;
+  const TitleBoxVariants = {
+    initial: {
+      y: '-100vh'
+    },
+    animate: {
+      y: 0,
+      transition: { type: 'spring', stiffness: 50 }
+    },
+    whileTap : { scale: 0.9 },
+    exit: {
+      y: '-100vh',
+      transition: { ease: 'easeInOut' }
+    }
+  }
 
   const NavContainer = styled.div`
     position: absolute;
@@ -19,7 +34,7 @@ const Home = ( props ) => {
     justify-content: center;
   `;
 
-  const NavElement = styled.div`
+  const NavElement = styled(motion.div)`
     display: inline-block;
     margin: auto;
     position: relative;
@@ -28,6 +43,13 @@ const Home = ( props ) => {
     text-align: center;
   `;
 
+  const NavElementVariants = {
+    exit: {
+      y: '100vh',
+      transition: { ease: 'easeInOut' }
+    }
+  }
+
   const Overlay = styled.div`
     height: 100%;
     width: 100%;
@@ -35,7 +57,7 @@ const Home = ( props ) => {
     background-color: rgba(255,255,255,0.15);
   `;
 
-  const Wrapper = styled.div`
+  const Wrapper = styled(motion.div)`
     height: 100%;
     width: 100%;
     background: linear-gradient(
@@ -46,21 +68,31 @@ const Home = ( props ) => {
     position: absolute;
   `;
 
+  const WrapperVariants = {
+    initial: { },
+    animate: {  },
+    whileTap : { },
+    exit: { opacity: 0 }
+  }
+
   return (
     <>
-      <Wrapper>
+      <Wrapper
+        variants = { WrapperVariants }
+        initial = 'initial' animate = 'animate' whileTap = 'whileTap' exit = 'exit'>
         <Overlay>
-          <TitleBox>
+          <TitleBox
+            variants = { TitleBoxVariants }>
             <StyledTitle />
           </TitleBox>
           <NavContainer>
-            <NavElement>
+            <NavElement variants = { NavElementVariants } >
               <NeonLink
-                href='/about'
+                to='/about'
                 text='About'/></NavElement>
-            <NavElement>
+            <NavElement variants = { NavElementVariants }>
               <NeonLink
-                href='/contributors'
+                to='/contributors'
                 text='Contributors'/></NavElement>
           </NavContainer>
         </Overlay>

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 
 const StyledTile = ( props ) => {
 
@@ -18,7 +17,7 @@ const StyledTile = ( props ) => {
     transform: skewY( ${ skew } );
   `;
 
-  const StyledTitle = styled(motion.h1)`
+  const StyledTitle = styled.h1`
     font-family:            'ITC Serif Gothic Heavy';
     letter-spacing:         .75rem;
     color:                  white;
@@ -30,12 +29,7 @@ const StyledTile = ( props ) => {
   `;
   return (
     <DiagonalBox>
-      <StyledTitle
-        initial = {{ y: '-100vw' }} // vw = viewport width
-        transition = {{ type: 'spring', stiffness: 50 }}
-        animate = {{ y: 0 }}
-        whileTap = {{ scale: 0.9 }}
-      >{ title }</StyledTitle>
+      <StyledTitle>{ title }</StyledTitle>
     </DiagonalBox>
   );
 };

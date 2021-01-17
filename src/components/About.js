@@ -1,12 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 const About = ( props ) => {
-  const Title = styled.h1`
+  const Title = styled(motion.h1)`
     text-align: center;
     font-family: 'Old London';
     font-size: 500%;
-  `
+  `;
+  const TitleVariants = {
+    initial: {
+      scale: 0
+    },
+    animate: {
+      scale: 1
+    }
+  };
   const Content = styled.div`
     width: 60%;
     margin: auto;
@@ -19,10 +28,23 @@ const About = ( props ) => {
     position: absolute;
   `;
 
+  const WrapperVariants = {
+    initial: { opacity: 0 },
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+        delayChildren: 0.1 } },
+    whileTap : { },
+    exit: { }
+  };
+
   return (
-    <Wrapper>
+    <Wrapper
+      variants = { WrapperVariants }
+      initial = 'initial' animate = 'animate' whileTap = 'whileTap' exit = 'exit'>
       <Content>
-        <Title>About</Title>
+        <Title variants = { TitleVariants }>About</Title>
       </Content>
     </Wrapper>
   )
